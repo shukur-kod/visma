@@ -1,0 +1,60 @@
+.catalogContainer {
+    max-width: 800px; /* Maksimal kenglik */
+    margin: 0 auto; /* Markazda joylashish */
+    padding: 20px; /* Ichki bo'shliqlar */
+    background-color: #f9f9f9; /* Orqa fon rangi */
+    border-radius: 8px; /* Burchaklarni yumshatish */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soyali effekt */
+}
+
+.headerText {
+    text-align: center; /* O'rtada joylashish */
+    font-size: 24px; /* Shrift o'lchami */
+    margin-bottom: 20px; /* Pastki bo'shliqlar */
+    color: #333; /* Matn rangi */
+}
+
+.form {
+    display: grid; /* Grid tizimi */
+    grid-template-columns: 1fr 1fr; /* Ikkita ustun */
+    gap: 15px; /* Ustunlar orasidagi bo'shliq */
+}
+
+.label {
+    font-weight: bold; /* Qalin matn */
+    margin-bottom: 5px; /* Pastki bo'shliqlar */
+    display: block; /* Butun qatorni egallash */
+}
+
+.input, .textarea {
+    width: 100%; /* Kenglik 100% */
+    padding: 10px; /* Ichki bo'shliqlar */
+    border: 1px solid #ccc; /* Chegaralar */
+    border-radius: 4px; /* Burchaklarni yumshatish */
+    box-sizing: border-box; /* Quti o'lchovlari */
+}
+
+.textarea {
+    resize: vertical; /* Vertikal o'lchovga ruxsat berish */
+}
+
+.submitButton {
+    margin-top: 15px; /* Pastki bo'shliqlar */
+    grid-column: span 2; /* Ikkita ustun bo'ylab joylashish */
+    padding: 10px; /* Ichki bo'shliqlar */
+    background-color: #007bff; /* Fon rangi */
+    color: white; /* Matn rangi */
+    border: none; /* Chegara yo'q */
+    border-radius: 4px; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursorni o'zgartirish */
+    font-size: 16px; /* Shrift o'lchami */
+}
+
+.submitButton:hover {
+    background-color: #0056b3; /* Hover holati */
+}
+
+.errorMessage {
+    color: red; /* Xato xabari rangi */
+    font-size: 12px; /* Shrift o'lchami */
+}

@@ -1,0 +1,85 @@
+/* styles/navbar.css */
+select {
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none; /* Brauzer standart ko'rinishini olib tashlash */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>'); /* Piktogramma */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Piktogramma joylashuvi */
+    background-size: 12px; /* Piktogramma o'lchami */
+    cursor: pointer; /* Kursorni ko'rsatish */
+}
+
+select:hover {
+    border-color: #ffcc00; /* Hoverda chegara rangini o'zgartirish */
+}
+
+select:focus {
+    outline: none; /* Fokussiz ko'rinish */
+    border-color: #ffcc00; /* Fokustagi chegara rangi */
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Fokustagi soyali effekt */
+}
+
+nav {
+    background-color: #1e3a8a; /* Navbarning orqa fon rangi */
+    padding: 16px 24px; /* Navbarning ichki bo'shligi */
+    display: flex; /* Flex konteyner */
+    justify-content: space-between; /* Elementlarni joylash */
+    align-items: center; /* Vertikal markazlash */
+    box-shadow: 0 2px 10px rgba(237, 245, 245, 0.989); /* Soyali effekt */
+}
+
+nav div {
+   color: white;
+   font-size: 30px;
+}
+
+nav .logo {
+    color: white; /* Logo rangi */
+    font-size: 24px; /* Logo shrift o'lchami */
+    font-weight: bold; /* Logo qalinligi */
+}
+
+nav ul {
+    list-style: none; /* Ro'yxat belgilarini olib tashlash */
+    display: flex; /* Flex ro'yxat */
+    gap: 24px; /* Elementlar orasidagi bo'shliq */
+}
+
+nav ul li a {
+    color: white; /* Havolalar rangi */
+    text-decoration: none; /* Havolalar ostidagi chiziqni olib tashlash */
+    font-size: 18px; /* Havolalar shrift o'lchami */
+    transition: color 0.3s; /* Rang o'zgarishi uchun animatsiya */
+}
+
+nav ul li a:hover {
+    color: #fbbf24; /* Hover paytida rang o'zgarishi */
+}
+
+nav form {
+    display: flex; /* Flex forma */
+}
+
+nav input[type="text"] {
+    padding: 8px; /* Ichki bo'shliq */
+    border: 1px solid #ccc; /* Chegarasi */
+    border-radius: 4px 0 0 4px; /* Burchaklarni yumshatish */
+}
+
+nav button {
+    padding: 8px 16px; /* Ichki bo'shliq */
+    background-color: #fbbf24; /* Tugma orqa fon rangi */
+    color: white; /* Tugma matni rangi */
+    border: none; /* Chegarasiz */
+    border-radius: 0 4px 4px 0; /* Burchaklarni yumshatish */
+    cursor: pointer; /* Kursor ko'rsatkichini o'zgartirish */
+    transition: background-color 0.3s; /* Orqa fon rangi o'zgarishi uchun animatsiya */
+}
+
+nav button:hover {
+    background-color: #eab308; /* Hover paytida tugma rangi o'zgarishi */
+}

@@ -1,0 +1,64 @@
+.heroSection {
+  background-image: url('https://avatars.mds.yandex.net/i?id=ff75f5af0642ef0424ce64aea641687c5b285c0f-9181286-images-thumbs&n=13');
+  background-size: cover; /* Rasmni to'liq qoplash */
+  background-position: center; /* Rasmni markazda joylash */
+  height: 100vh; /* Butun ekran balandligi */
+  display: flex; /* Flex konteyner */
+  align-items: center; /* Vertikal markazlash */
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Maksimal kenglik */
+  margin: 0 auto; /* Markazga joylash */
+  padding: 20px; /* Ichki bo'shliq */
+}
+
+.leftDivs {
+  justify-content: end;
+  
+display: flex;
+flex-wrap: wrap;/* Vertikal joylash */
+  gap: 20px; /* Divlar orasidagi bo'shliq */
+}
+
+.box {
+
+  width: 200px; /* Divning kengligi */
+  height: 180px; /* Divning balandligi */
+  background-color: rgba(255, 255, 255, 0.8); /* Oq rang, shaffoflik */
+  border-radius: 8px; /* Burchaklarni yumshatish */
+  display: flex;
+  align-items: center; /* Vertikal markazlash */
+  justify-content: center; /* Gorizontal markazlash */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soyali effekt */
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column; /* Vertikal joylash */
+  justify-content: space-between; /* Bo'sh joyni taqsimlash */
+  margin-left: 40px; /* Chap tomondan bo'shliq */
+  height: 100%; /* Balandlikni to'liq egallash */
+}
+
+.largeText {
+  font-size: 36px; /* Yirik matn o'lchami */
+  color: white; /* Matn rangi */
+  margin: 0; /* Marginni olib tashlash */
+}
+
+.smallText {
+  font-size: 18px; /* Kichik matn o'lchami */
+  color: white; /* Matn rangi */
+  margin: 10px 0; /* Yuqoridan va pastdan margin */
+}
+
+.catalogLink {
+  margin-top: 20px; /* Yuqoridan bo'shliq */
+  padding: 10px 20px; /* Ichki bo'shliq */
+  background-color: #ffcc00; /* Orqa fon rangi */
+  color: black; /* Matn rangi */
+  border-radius: 5px; /* Burchaklarni yumshatish */
+  text-decoration: none; /* Matn ostidagi chiziqni */}
